@@ -50,10 +50,10 @@ def show():
             "<h1 style='text-align: center; margin-bottom: 0;'>SwiftAuth</h1>",
             unsafe_allow_html=True,
         )
-        st.markdown(
-            "<h3 style='text-align: center; color: #4A90E2; margin-top: 0;'>Welcome to Document Verification</h3>",
-            unsafe_allow_html=True,
-        )
+        # st.markdown(
+        #     "<h3 style='text-align: center; color: #4A90E2; margin-top: 0;'>Welcome to Document Verification</h3>",
+        #     unsafe_allow_html=True,
+        # )
 
         st.markdown(
             """
@@ -74,7 +74,11 @@ def show():
             if st.form_submit_button("Login"):
                 if email and password:  # Basic validation
                     st.session_state.user_email = email
-                    st.session_state.page = "identity"
+                    st.session_state.page = "handsign"
                     st.rerun()
                 else:
                     st.error("Please fill in all fields")
+
+            if st.form_submit_button("Sign Up"):
+                st.session_state.page = "signup"
+                st.rerun()

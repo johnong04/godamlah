@@ -3,6 +3,9 @@ import streamlit as st
 from pages import (
     identity,
     login,
+    loginSuccess,
+    signup,
+    handsign,
     upscale_1,
     results_1,
     bank_statement,
@@ -47,6 +50,12 @@ if "user_email" not in st.session_state:
 def main():
     if st.session_state.page == "login":
         login.show()
+    if st.session_state.page == "loginSuccess":
+        loginSuccess.show()
+    elif st.session_state.page == "signup":
+        signup.show()
+    elif st.session_state.page == "handsign":
+        handsign.show()
     elif st.session_state.page == "identity":
         identity.show()
     elif st.session_state.page == "upscale_1":
@@ -67,7 +76,7 @@ def main():
         """
     <div style='position: fixed; left: 0; bottom: 0; width: 100%; background-color: #1E1E1E; padding: 10px 0;'>
         <div style='max-width: 800px; margin: 0 auto; text-align: center;'>
-            <p style='color: #888888; font-size: 12px; margin: 0;'>© 2024 SwiftAuth v1.0.0 | Document Authentication Made Easy</p>
+            <p style='color: #888888; font-size: 12px; margin: 0;'>© 2024 SwiftAuth v1.0.0 | User Authentication Made Easy</p>
         </div>
     </div>
     """,
