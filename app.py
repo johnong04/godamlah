@@ -1,7 +1,4 @@
-import tempfile
 import streamlit as st
-import logging
-import asyncio
 
 from pages import (
     identity,
@@ -13,8 +10,6 @@ from pages import (
     results_2,
     selfie
 )
-
-import time
 
 st.set_page_config(
     page_title="SwiftAuth",
@@ -50,7 +45,6 @@ if "user_email" not in st.session_state:
 
 # Main app logic
 def main():
-
     if st.session_state.page == "login":
         login.show()
     elif st.session_state.page == "identity":
@@ -73,7 +67,7 @@ def main():
         """
     <div style='position: fixed; left: 0; bottom: 0; width: 100%; background-color: #1E1E1E; padding: 10px 0;'>
         <div style='max-width: 800px; margin: 0 auto; text-align: center;'>
-            <p style='color: #888888; font-size: 12px; margin: 0;'>© 2024 SwiftAuth v1.0.0 | Document Authentication Made Easy — Developed by John Ong from EdgeRunners</p>
+            <p style='color: #888888; font-size: 12px; margin: 0;'>© 2024 SwiftAuth v1.0.0 | Document Authentication Made Easy</p>
         </div>
     </div>
     """,
