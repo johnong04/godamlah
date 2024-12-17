@@ -72,7 +72,7 @@ def show():
                         tmp_file_path = tmp_file.name
 
                     # Upscale the image
-                    upscale_factor = 2  # You can adjust this value
+                    upscale_factor = 1  # You can adjust this value
                     upscaled_image = nearestNeighboor(tmp_file_path, upscale_factor)
 
                     # Convert the numpy array to bytes

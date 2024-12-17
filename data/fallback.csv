@@ -15,3 +15,7 @@ szeyusim@gmail.com,2024-09-13 17:30:50,success,Bank statement from Publicbank ve
 szeyusim@gmail.com,2024-11-10 08:36:53,success,Name matches.,
 szeyusim@gmail.com,2024-11-10 08:38:06,success,Bank statement from Publicbank verified.,
 szeyusim@gmail.com,2024-11-10 08:38:19,failure,Account holder name does not match.,Suspicious
+szeyusim@gmail.com,2024-12-17 16:57:44,success,Name matches.,
+szeyusim@gmail.com,2024-12-17 17:00:37,success,Name matches.,
+szeyusim@gmail.com,2024-12-17 17:01:17,success,Bank statement from Publicbank verified.,
+szeyusim@gmail.com,2024-12-17 17:01:26,failure,Account holder name does not match.,Suspicious

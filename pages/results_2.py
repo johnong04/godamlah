@@ -197,7 +197,7 @@ Example format:
             )
 
         # Reset button
-        if st.button("← Start New Verification"):
+        if st.button("← Back to Login"):
             # Reset all relevant session states
             st.session_state.uploaded_file = None
             st.session_state.upscaled = False

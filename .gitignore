@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 myenv/
 pages/*.pyc
+output_test/
+upscaled_images/
+captured_selfie.jpg
+cropped_face.png
